@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XXTWebVideoRotate_Example' do
+  pod 'XXTWebVideoRotate', :path => '../'
+
+  target 'XXTWebVideoRotate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
