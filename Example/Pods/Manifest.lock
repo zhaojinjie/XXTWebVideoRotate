@@ -1,0 +1,16 @@
+PODS:
+  - XXTWebVideoRotate (0.1.0)
+
+DEPENDENCIES:
+  - XXTWebVideoRotate (from `../`)
+
+EXTERNAL SOURCES:
+  XXTWebVideoRotate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XXTWebVideoRotate: 03faa8b46786ac6380ad79ac9336ca59be6e102d
+
+PODFILE CHECKSUM: 29473f24c4712a4cc99a572dfab1244630b7b4a9
+
+COCOAPODS: 1.9.0.beta.2

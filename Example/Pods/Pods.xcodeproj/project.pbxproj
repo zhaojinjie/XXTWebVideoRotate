@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A2DBD8133BFBC48CA620D97111D3999 /* UIViewController+XXTVideoPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 3661BA6BC6A84C8D9135B17271586246 /* UIViewController+XXTVideoPlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		251E0655E90C8E188F661159ADD02D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		320934CDAFA91E1C1C111BB122EFA714 /* XXTWebVideoRotate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 648CE57164950925850C48F444929210 /* XXTWebVideoRotate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		561BD1D0FAA3BE6747A3FB8F0858CE44 /* Pods-XXTWebVideoRotate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFEA1CE6D33CFAE4632E952EF9F93CC /* Pods-XXTWebVideoRotate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		695227A45D214251E15B4EDA9599D600 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6F9D0038782C66297126B770F421EC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7FA668D3E1A2225D22931201F1F1FFD5 /* Pods-XXTWebVideoRotate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 043069E53BF8542E70BF474F9E42C629 /* Pods-XXTWebVideoRotate_Tests-dummy.m */; };
+		9E927597C3A689AFB490E71D3DEDBA34 /* UIViewController+XXTVideoPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819912F0FDAABF0A3CCF6DBFBB2316C /* UIViewController+XXTVideoPlay.m */; };
+		C12A416DCC9301D44B2E9180E676EE3D /* XXTWebVideoRotate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A35A8091877546C460DCE75DC3A4C1 /* XXTWebVideoRotate-dummy.m */; };
+		F4826C9A1823D624609A9AE4FB9F54FB /* Pods-XXTWebVideoRotate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A76597973D14B290472D661945C6A329 /* Pods-XXTWebVideoRotate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD545AF1E319360B1FF52148ECC3C738 /* Pods-XXTWebVideoRotate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2196A4761AF0B9A796848475625C56CC /* Pods-XXTWebVideoRotate_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62E48C60872CF1677835774BE1700DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7F7B554BCC47F539C5DAF8F8D29D3D;
+			remoteInfo = "Pods-XXTWebVideoRotate_Example";
+		};
+		F7B1738AC26F48A529FEFFA5F95CD8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EAC89AA3B6D887194FDA7EDF3A7CB3;
+			remoteInfo = XXTWebVideoRotate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043069E53BF8542E70BF474F9E42C629 /* Pods-XXTWebVideoRotate_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XXTWebVideoRotate_Tests-dummy.m"; sourceTree = "<group>"; };
+		1819912F0FDAABF0A3CCF6DBFBB2316C /* UIViewController+XXTVideoPlay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XXTVideoPlay.m"; path = "XXTWebVideoRotate/Classes/UIViewController+XXTVideoPlay.m"; sourceTree = "<group>"; };
+		1858637CA772FE8572B31CFAF03598E7 /* Pods-XXTWebVideoRotate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2196A4761AF0B9A796848475625C56CC /* Pods-XXTWebVideoRotate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XXTWebVideoRotate_Example-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		355C5B1089ABC6FF0EBAD262CD804F30 /* Pods-XXTWebVideoRotate_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Tests-Info.plist"; sourceTree = "<group>"; };
+		3661BA6BC6A84C8D9135B17271586246 /* UIViewController+XXTVideoPlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+XXTVideoPlay.h"; path = "XXTWebVideoRotate/Classes/UIViewController+XXTVideoPlay.h"; sourceTree = "<group>"; };
+		4CA561E5AFB6835A67B2B3DCF84FFAED /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4E1E75EC656CE2CF2E1BA21ABE7D216E /* XXTWebVideoRotate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXTWebVideoRotate.debug.xcconfig; sourceTree = "<group>"; };
+		4EFEA1CE6D33CFAE4632E952EF9F93CC /* Pods-XXTWebVideoRotate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXTWebVideoRotate_Example-umbrella.h"; sourceTree = "<group>"; };
+		579D64B41DFFD5CBEECAD544431B0D60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		58E9D33DC0D2AAFD8829AF15722D9791 /* Pods-XXTWebVideoRotate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		648CE57164950925850C48F444929210 /* XXTWebVideoRotate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXTWebVideoRotate-umbrella.h"; sourceTree = "<group>"; };
+		7564163D13FE395FF7A64EF7F1C06378 /* Pods-XXTWebVideoRotate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXTWebVideoRotate_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7982603DAB87FC76D4BCC1E7E567E249 /* Pods-XXTWebVideoRotate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7CD89E8150825B42ACE7851E4EFE50C4 /* Pods-XXTWebVideoRotate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XXTWebVideoRotate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		840946D214C0978A9A3E4737B1EAEE68 /* Pods-XXTWebVideoRotate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89438030D492151CD85F0819B0E20748 /* XXTWebVideoRotate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XXTWebVideoRotate.modulemap; sourceTree = "<group>"; };
+		90FE34B67090D8BF31A138DD7986FAA9 /* Pods-XXTWebVideoRotate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		99A35A8091877546C460DCE75DC3A4C1 /* XXTWebVideoRotate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XXTWebVideoRotate-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A328F006F7FB3747802AF7E9633CEAD8 /* XXTWebVideoRotate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XXTWebVideoRotate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A76597973D14B290472D661945C6A329 /* Pods-XXTWebVideoRotate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXTWebVideoRotate_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B01C381EC732B4F5188022006CE54D8C /* XXTWebVideoRotate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXTWebVideoRotate.release.xcconfig; sourceTree = "<group>"; };
+		B131B96B95F723C5B9295E2DDFF8E73D /* Pods-XXTWebVideoRotate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XXTWebVideoRotate_Example.modulemap"; sourceTree = "<group>"; };
+		B2AFD2CEFE5AA1AB133BF77FE229D440 /* Pods_XXTWebVideoRotate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXTWebVideoRotate_Tests.framework; path = "Pods-XXTWebVideoRotate_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE656E7A38B3300EF3230B7C0F8F8C2 /* Pods-XXTWebVideoRotate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XXTWebVideoRotate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C67206347E167AF4551FDC2E5FA832C8 /* Pods_XXTWebVideoRotate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXTWebVideoRotate_Example.framework; path = "Pods-XXTWebVideoRotate_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D405527F9706B8D74F3AF0835678CB4E /* XXTWebVideoRotate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXTWebVideoRotate-prefix.pch"; sourceTree = "<group>"; };
+		D75992D8718AB436339EB69E999213BF /* Pods-XXTWebVideoRotate_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Example-Info.plist"; sourceTree = "<group>"; };
+		E8E0020B6A0B0890DC30A447FC3493AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E9D524FF3E81D49BCDCCA6313901DB9A /* XXTWebVideoRotate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XXTWebVideoRotate-Info.plist"; sourceTree = "<group>"; };
+		F05B44EF24F1884F3E4990FB63797B94 /* Pods-XXTWebVideoRotate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XXTWebVideoRotate_Tests.modulemap"; sourceTree = "<group>"; };
+		F2058D5B5DBA1B73AAB502B573C10A5A /* XXTWebVideoRotate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XXTWebVideoRotate.framework; path = XXTWebVideoRotate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2626FFE6F431EF8A82A605D3E12E014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695227A45D214251E15B4EDA9599D600 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A66CCEC4B0F24ABA5E15BD7C3BC557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251E0655E90C8E188F661159ADD02D05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA49AA3F7AE37335281F90EBC35793E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9D0038782C66297126B770F421EC38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28920BF6498039C5C9496B598CBE97A5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9663BDCE40DBCC40459186D4DC4F9E0C /* XXTWebVideoRotate */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2A472685A19AF1BB1C1AC45B7C5F6BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C67206347E167AF4551FDC2E5FA832C8 /* Pods_XXTWebVideoRotate_Example.framework */,
+				B2AFD2CEFE5AA1AB133BF77FE229D440 /* Pods_XXTWebVideoRotate_Tests.framework */,
+				F2058D5B5DBA1B73AAB502B573C10A5A /* XXTWebVideoRotate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F1AB83FC58CB792DA218ED76C0C1B0 /* Pods-XXTWebVideoRotate_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B131B96B95F723C5B9295E2DDFF8E73D /* Pods-XXTWebVideoRotate_Example.modulemap */,
+				7CD89E8150825B42ACE7851E4EFE50C4 /* Pods-XXTWebVideoRotate_Example-acknowledgements.markdown */,
+				90FE34B67090D8BF31A138DD7986FAA9 /* Pods-XXTWebVideoRotate_Example-acknowledgements.plist */,
+				2196A4761AF0B9A796848475625C56CC /* Pods-XXTWebVideoRotate_Example-dummy.m */,
+				7564163D13FE395FF7A64EF7F1C06378 /* Pods-XXTWebVideoRotate_Example-frameworks.sh */,
+				D75992D8718AB436339EB69E999213BF /* Pods-XXTWebVideoRotate_Example-Info.plist */,
+				4EFEA1CE6D33CFAE4632E952EF9F93CC /* Pods-XXTWebVideoRotate_Example-umbrella.h */,
+				7982603DAB87FC76D4BCC1E7E567E249 /* Pods-XXTWebVideoRotate_Example.debug.xcconfig */,
+				58E9D33DC0D2AAFD8829AF15722D9791 /* Pods-XXTWebVideoRotate_Example.release.xcconfig */,
+			);
+			name = "Pods-XXTWebVideoRotate_Example";
+			path = "Target Support Files/Pods-XXTWebVideoRotate_Example";
+			sourceTree = "<group>";
+		};
+		9663BDCE40DBCC40459186D4DC4F9E0C /* XXTWebVideoRotate */ = {
+			isa = PBXGroup;
+			children = (
+				3661BA6BC6A84C8D9135B17271586246 /* UIViewController+XXTVideoPlay.h */,
+				1819912F0FDAABF0A3CCF6DBFBB2316C /* UIViewController+XXTVideoPlay.m */,
+				F7EC8749B0995940D594CDFEB774E2BE /* Pod */,
+				B0469B9776CBE4E4E6407DE414F6B7D2 /* Support Files */,
+			);
+			name = XXTWebVideoRotate;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B0469B9776CBE4E4E6407DE414F6B7D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89438030D492151CD85F0819B0E20748 /* XXTWebVideoRotate.modulemap */,
+				99A35A8091877546C460DCE75DC3A4C1 /* XXTWebVideoRotate-dummy.m */,
+				E9D524FF3E81D49BCDCCA6313901DB9A /* XXTWebVideoRotate-Info.plist */,
+				D405527F9706B8D74F3AF0835678CB4E /* XXTWebVideoRotate-prefix.pch */,
+				648CE57164950925850C48F444929210 /* XXTWebVideoRotate-umbrella.h */,
+				4E1E75EC656CE2CF2E1BA21ABE7D216E /* XXTWebVideoRotate.debug.xcconfig */,
+				B01C381EC732B4F5188022006CE54D8C /* XXTWebVideoRotate.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XXTWebVideoRotate";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				28920BF6498039C5C9496B598CBE97A5 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2A472685A19AF1BB1C1AC45B7C5F6BF4 /* Products */,
+				DA844C9BF9CECA4B90CA9533914EDA48 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA844C9BF9CECA4B90CA9533914EDA48 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F1AB83FC58CB792DA218ED76C0C1B0 /* Pods-XXTWebVideoRotate_Example */,
+				DFCC2C8539BF8640550CA9C5DB99804E /* Pods-XXTWebVideoRotate_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DFCC2C8539BF8640550CA9C5DB99804E /* Pods-XXTWebVideoRotate_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F05B44EF24F1884F3E4990FB63797B94 /* Pods-XXTWebVideoRotate_Tests.modulemap */,
+				BAE656E7A38B3300EF3230B7C0F8F8C2 /* Pods-XXTWebVideoRotate_Tests-acknowledgements.markdown */,
+				840946D214C0978A9A3E4737B1EAEE68 /* Pods-XXTWebVideoRotate_Tests-acknowledgements.plist */,
+				043069E53BF8542E70BF474F9E42C629 /* Pods-XXTWebVideoRotate_Tests-dummy.m */,
+				355C5B1089ABC6FF0EBAD262CD804F30 /* Pods-XXTWebVideoRotate_Tests-Info.plist */,
+				A76597973D14B290472D661945C6A329 /* Pods-XXTWebVideoRotate_Tests-umbrella.h */,
+				1858637CA772FE8572B31CFAF03598E7 /* Pods-XXTWebVideoRotate_Tests.debug.xcconfig */,
+				4CA561E5AFB6835A67B2B3DCF84FFAED /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */,
+			);
+			name = "Pods-XXTWebVideoRotate_Tests";
+			path = "Target Support Files/Pods-XXTWebVideoRotate_Tests";
+			sourceTree = "<group>";
+		};
+		F7EC8749B0995940D594CDFEB774E2BE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				579D64B41DFFD5CBEECAD544431B0D60 /* LICENSE */,
+				E8E0020B6A0B0890DC30A447FC3493AD /* README.md */,
+				A328F006F7FB3747802AF7E9633CEAD8 /* XXTWebVideoRotate.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		404AB7C176124B23FA8FB13F365269D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561BD1D0FAA3BE6747A3FB8F0858CE44 /* Pods-XXTWebVideoRotate_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD0DB155FB3E5F252ED78D923F77B2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4826C9A1823D624609A9AE4FB9F54FB /* Pods-XXTWebVideoRotate_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7447B3F9EE1FABAE7A93FF7CF20CC370 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2DBD8133BFBC48CA620D97111D3999 /* UIViewController+XXTVideoPlay.h in Headers */,
+				320934CDAFA91E1C1C111BB122EFA714 /* XXTWebVideoRotate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FAC56A68F589FB2B1778FB15FBFBB74 /* Pods-XXTWebVideoRotate_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32EAFB20F58712CCE9BB63C9DF3F8AB /* Build configuration list for PBXNativeTarget "Pods-XXTWebVideoRotate_Tests" */;
+			buildPhases = (
+				6BD0DB155FB3E5F252ED78D923F77B2F /* Headers */,
+				2410D328C619A73DCAEE082B7932575E /* Sources */,
+				E2626FFE6F431EF8A82A605D3E12E014 /* Frameworks */,
+				6BFD611F424AB64C82179A059A9C3D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB98C36D0848D35CE86E86B8C575292 /* PBXTargetDependency */,
+			);
+			name = "Pods-XXTWebVideoRotate_Tests";
+			productName = "Pods-XXTWebVideoRotate_Tests";
+			productReference = B2AFD2CEFE5AA1AB133BF77FE229D440 /* Pods_XXTWebVideoRotate_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36EAC89AA3B6D887194FDA7EDF3A7CB3 /* XXTWebVideoRotate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C73E5A309FB360FE082D0D808D21630 /* Build configuration list for PBXNativeTarget "XXTWebVideoRotate" */;
+			buildPhases = (
+				7447B3F9EE1FABAE7A93FF7CF20CC370 /* Headers */,
+				7B5A2344B5FC25E96E28D548E2A8BA29 /* Sources */,
+				ECA49AA3F7AE37335281F90EBC35793E /* Frameworks */,
+				95257421E9FE4D19394C7AD14C21AC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XXTWebVideoRotate;
+			productName = XXTWebVideoRotate;
+			productReference = F2058D5B5DBA1B73AAB502B573C10A5A /* XXTWebVideoRotate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B7F7B554BCC47F539C5DAF8F8D29D3D /* Pods-XXTWebVideoRotate_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5C1C7D43192E860CE1B3D2E25F5533 /* Build configuration list for PBXNativeTarget "Pods-XXTWebVideoRotate_Example" */;
+			buildPhases = (
+				404AB7C176124B23FA8FB13F365269D9 /* Headers */,
+				AC8721234DCCD3275A950FE24E67D0B2 /* Sources */,
+				E9A66CCEC4B0F24ABA5E15BD7C3BC557 /* Frameworks */,
+				A85721585EDE7A3F834176E6AD001BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5557EDC6B1150C4956934AA2774A8C87 /* PBXTargetDependency */,
+			);
+			name = "Pods-XXTWebVideoRotate_Example";
+			productName = "Pods-XXTWebVideoRotate_Example";
+			productReference = C67206347E167AF4551FDC2E5FA832C8 /* Pods_XXTWebVideoRotate_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2A472685A19AF1BB1C1AC45B7C5F6BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B7F7B554BCC47F539C5DAF8F8D29D3D /* Pods-XXTWebVideoRotate_Example */,
+				0FAC56A68F589FB2B1778FB15FBFBB74 /* Pods-XXTWebVideoRotate_Tests */,
+				36EAC89AA3B6D887194FDA7EDF3A7CB3 /* XXTWebVideoRotate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BFD611F424AB64C82179A059A9C3D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95257421E9FE4D19394C7AD14C21AC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A85721585EDE7A3F834176E6AD001BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2410D328C619A73DCAEE082B7932575E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA668D3E1A2225D22931201F1F1FFD5 /* Pods-XXTWebVideoRotate_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B5A2344B5FC25E96E28D548E2A8BA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E927597C3A689AFB490E71D3DEDBA34 /* UIViewController+XXTVideoPlay.m in Sources */,
+				C12A416DCC9301D44B2E9180E676EE3D /* XXTWebVideoRotate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8721234DCCD3275A950FE24E67D0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD545AF1E319360B1FF52148ECC3C738 /* Pods-XXTWebVideoRotate_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5557EDC6B1150C4956934AA2774A8C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XXTWebVideoRotate;
+			target = 36EAC89AA3B6D887194FDA7EDF3A7CB3 /* XXTWebVideoRotate */;
+			targetProxy = F7B1738AC26F48A529FEFFA5F95CD8F2 /* PBXContainerItemProxy */;
+		};
+		5EB98C36D0848D35CE86E86B8C575292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XXTWebVideoRotate_Example";
+			target = 8B7F7B554BCC47F539C5DAF8F8D29D3D /* Pods-XXTWebVideoRotate_Example */;
+			targetProxy = 62E48C60872CF1677835774BE1700DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22D97B6C0AD6D1C3DB0D97EBDC892FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1E75EC656CE2CF2E1BA21ABE7D216E /* XXTWebVideoRotate.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate.modulemap";
+				PRODUCT_MODULE_NAME = XXTWebVideoRotate;
+				PRODUCT_NAME = XXTWebVideoRotate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38F4747CF2F650B89DF9DA9C1DB4938C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1858637CA772FE8572B31CFAF03598E7 /* Pods-XXTWebVideoRotate_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		71869E30BF2471F32F665E351CB8EAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01C381EC732B4F5188022006CE54D8C /* XXTWebVideoRotate.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XXTWebVideoRotate/XXTWebVideoRotate.modulemap";
+				PRODUCT_MODULE_NAME = XXTWebVideoRotate;
+				PRODUCT_NAME = XXTWebVideoRotate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9CF2E135187E9A994F8FABE64D230854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA561E5AFB6835A67B2B3DCF84FFAED /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD5167714721A86664AA0AF48108C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E9D33DC0D2AAFD8829AF15722D9791 /* Pods-XXTWebVideoRotate_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F60BA5FF629133663EF8DBB943C56E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7982603DAB87FC76D4BCC1E7E567E249 /* Pods-XXTWebVideoRotate_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C73E5A309FB360FE082D0D808D21630 /* Build configuration list for PBXNativeTarget "XXTWebVideoRotate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D97B6C0AD6D1C3DB0D97EBDC892FAB /* Debug */,
+				71869E30BF2471F32F665E351CB8EAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5C1C7D43192E860CE1B3D2E25F5533 /* Build configuration list for PBXNativeTarget "Pods-XXTWebVideoRotate_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60BA5FF629133663EF8DBB943C56E87 /* Debug */,
+				DD5167714721A86664AA0AF48108C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32EAFB20F58712CCE9BB63C9DF3F8AB /* Build configuration list for PBXNativeTarget "Pods-XXTWebVideoRotate_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F4747CF2F650B89DF9DA9C1DB4938C /* Debug */,
+				9CF2E135187E9A994F8FABE64D230854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

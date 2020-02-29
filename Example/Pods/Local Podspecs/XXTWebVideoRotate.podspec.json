@@ -1,0 +1,22 @@
+{
+  "name": "XXTWebVideoRotate",
+  "version": "0.1.0",
+  "summary": "A short description of XXTWebVideoRotate.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhaoxuan/XXTWebVideoRotate",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhaoxuan": "zhaoxuan0315@163.com"
+  },
+  "source": {
+    "git": "https://github.com/zhaoxuan/XXTWebVideoRotate.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XXTWebVideoRotate/Classes/**/*"
+}

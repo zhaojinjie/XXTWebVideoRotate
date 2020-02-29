@@ -1,0 +1,6 @@
+framework module Pods_XXTWebVideoRotate_Example {
+  umbrella header "Pods-XXTWebVideoRotate_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

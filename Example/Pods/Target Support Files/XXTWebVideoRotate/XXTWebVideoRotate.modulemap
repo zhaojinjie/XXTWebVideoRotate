@@ -1,0 +1,6 @@
+framework module XXTWebVideoRotate {
+  umbrella header "XXTWebVideoRotate-umbrella.h"
+
+  export *
+  module * { export * }
+}
