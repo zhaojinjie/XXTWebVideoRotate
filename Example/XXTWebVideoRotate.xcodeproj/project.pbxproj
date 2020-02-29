@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8DDD54CBA569A3705970F3D9 /* Pods_XXTWebVideoRotate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13C016D8066E7A8957EB9C2 /* Pods_XXTWebVideoRotate_Tests.framework */; };
 		BCA9FB05DC85447CF124272D /* Pods_XXTWebVideoRotate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD467C75F72AECD70FF94EF /* Pods_XXTWebVideoRotate_Example.framework */; };
+		CF5E8A71240A952E00DAE7AC /* XXTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5E8A70240A952E00DAE7AC /* XXTWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1472AA520FAA4F3DEEB6DCC4 /* XXTWebVideoRotate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XXTWebVideoRotate.podspec; path = ../XXTWebVideoRotate.podspec; sourceTree = "<group>"; };
+		1472AA520FAA4F3DEEB6DCC4 /* XXTWebVideoRotate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XXTWebVideoRotate.podspec; path = ../XXTWebVideoRotate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		497A0116B9FE4E427B01B5BF /* Pods-XXTWebVideoRotate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXTWebVideoRotate_Example.release.xcconfig"; path = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XXTWebVideoRotate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXTWebVideoRotate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,13 +59,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6FB61BF52BC416A8FC8510D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6FB61BF52BC416A8FC8510D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F6852E8E9FCE056C6B54B1 /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXTWebVideoRotate_Tests.release.xcconfig"; path = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BD467C75F72AECD70FF94EF /* Pods_XXTWebVideoRotate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXTWebVideoRotate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A37211AF1202DDDAA6600246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A37211AF1202DDDAA6600246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A400B7FF037D4CDFB14B56E3 /* Pods-XXTWebVideoRotate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXTWebVideoRotate_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XXTWebVideoRotate_Tests/Pods-XXTWebVideoRotate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5E8A6F240A952E00DAE7AC /* XXTWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXTWebViewController.h; sourceTree = "<group>"; };
+		CF5E8A70240A952E00DAE7AC /* XXTWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXTWebViewController.m; sourceTree = "<group>"; };
 		D13C016D8066E7A8957EB9C2 /* Pods_XXTWebVideoRotate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXTWebVideoRotate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E539A8C8D8B412895136B76E /* Pods-XXTWebVideoRotate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXTWebVideoRotate_Example.debug.xcconfig"; path = "Target Support Files/Pods-XXTWebVideoRotate_Example/Pods-XXTWebVideoRotate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XXTViewController.h */,
 				6003F5A6195388D20070C39A /* XXTViewController.m */,
+				CF5E8A6F240A952E00DAE7AC /* XXTWebViewController.h */,
+				CF5E8A70240A952E00DAE7AC /* XXTWebViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +198,6 @@
 				A400B7FF037D4CDFB14B56E3 /* Pods-XXTWebVideoRotate_Tests.debug.xcconfig */,
 				84F6852E8E9FCE056C6B54B1 /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -365,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XXTAppDelegate.m in Sources */,
+				CF5E8A71240A952E00DAE7AC /* XXTWebViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* XXTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -449,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -494,6 +500,7 @@
 			baseConfigurationReference = E539A8C8D8B412895136B76E /* Pods-XXTWebVideoRotate_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XXTWebVideoRotate/XXTWebVideoRotate-Prefix.pch";
 				INFOPLIST_FILE = "XXTWebVideoRotate/XXTWebVideoRotate-Info.plist";
@@ -510,6 +517,7 @@
 			baseConfigurationReference = 497A0116B9FE4E427B01B5BF /* Pods-XXTWebVideoRotate_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XXTWebVideoRotate/XXTWebVideoRotate-Prefix.pch";
 				INFOPLIST_FILE = "XXTWebVideoRotate/XXTWebVideoRotate-Info.plist";

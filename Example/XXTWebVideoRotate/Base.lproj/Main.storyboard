@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="orR-fj-St7">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cU3-7B-2LQ">
+            <objects>
+                <navigationController id="orR-fj-St7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w9n-99-55W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="sha-Tg-cYS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ib7-0h-6mO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-615" y="4"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
@@ -20,12 +34,62 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K27-xg-v6G">
+                                <rect key="frame" x="104.5" y="316.5" width="166" height="34"/>
+                                <state key="normal" title="跳转到视频播放页面">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.70980392160000005" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k5c-dz-QZg" kind="show" id="8EG-zq-ZhC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K27-xg-v6G" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="rrW-p8-GvO"/>
+                            <constraint firstItem="K27-xg-v6G" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="xF1-nh-1V4"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zti-XZ-bw9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="54" y="24"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="GRJ-2D-KSk">
+            <objects>
+                <viewController id="k5c-dz-QZg" customClass="XXTWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4aB-Ww-NIM"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGJ-W3-XxV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbw-xc-e4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-cF-fli">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HGJ-W3-XxV" firstAttribute="top" secondItem="hVC-cF-fli" secondAttribute="bottom" id="HW9-D9-gZi"/>
+                            <constraint firstItem="hVC-cF-fli" firstAttribute="top" secondItem="4aB-Ww-NIM" secondAttribute="bottom" id="hSz-Ka-RP2"/>
+                            <constraint firstItem="hVC-cF-fli" firstAttribute="leading" secondItem="dbw-xc-e4Z" secondAttribute="leading" id="pyJ-gw-Tar"/>
+                            <constraint firstAttribute="trailing" secondItem="hVC-cF-fli" secondAttribute="trailing" id="voa-ix-KVk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6gL-cB-ZsK"/>
+                    <connections>
+                        <outlet property="videoWebView" destination="hVC-cF-fli" id="mdY-zz-hQM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OyB-lh-O2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="24"/>
         </scene>
     </scenes>
 </document>

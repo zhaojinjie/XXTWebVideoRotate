@@ -9,10 +9,11 @@
 #import "UIViewController+XXTVideoPlay.h"
 #import <objc/runtime.h>
 @implementation UIViewController (XXTVideoPlay)
+ 
+#pragma mark - public
 
 // 监听网页上的视频播放
 -(void)observerWebViewVideoPlay{
-    
    ///点击了视频播放按钮，会进入系统原生的播放器
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidBecomeVisibleNotification object:nil];
   //点击原生的系统播放器的左上角的关闭按钮的回调
@@ -98,7 +99,7 @@
     }
 }
     
-#pragma mark------屏幕旋转相关---------
+#pragma mark -屏幕旋转相关
 
 
 /// 设置屏幕的旋转

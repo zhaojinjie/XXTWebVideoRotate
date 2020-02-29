@@ -48,7 +48,7 @@
 		4CA561E5AFB6835A67B2B3DCF84FFAED /* Pods-XXTWebVideoRotate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4E1E75EC656CE2CF2E1BA21ABE7D216E /* XXTWebVideoRotate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXTWebVideoRotate.debug.xcconfig; sourceTree = "<group>"; };
 		4EFEA1CE6D33CFAE4632E952EF9F93CC /* Pods-XXTWebVideoRotate_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXTWebVideoRotate_Example-umbrella.h"; sourceTree = "<group>"; };
-		579D64B41DFFD5CBEECAD544431B0D60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		579D64B41DFFD5CBEECAD544431B0D60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		58E9D33DC0D2AAFD8829AF15722D9791 /* Pods-XXTWebVideoRotate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XXTWebVideoRotate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		648CE57164950925850C48F444929210 /* XXTWebVideoRotate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXTWebVideoRotate-umbrella.h"; sourceTree = "<group>"; };
 		7564163D13FE395FF7A64EF7F1C06378 /* Pods-XXTWebVideoRotate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XXTWebVideoRotate_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -58,20 +58,20 @@
 		89438030D492151CD85F0819B0E20748 /* XXTWebVideoRotate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XXTWebVideoRotate.modulemap; sourceTree = "<group>"; };
 		90FE34B67090D8BF31A138DD7986FAA9 /* Pods-XXTWebVideoRotate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		99A35A8091877546C460DCE75DC3A4C1 /* XXTWebVideoRotate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XXTWebVideoRotate-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A328F006F7FB3747802AF7E9633CEAD8 /* XXTWebVideoRotate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XXTWebVideoRotate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A328F006F7FB3747802AF7E9633CEAD8 /* XXTWebVideoRotate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XXTWebVideoRotate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A76597973D14B290472D661945C6A329 /* Pods-XXTWebVideoRotate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XXTWebVideoRotate_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B01C381EC732B4F5188022006CE54D8C /* XXTWebVideoRotate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XXTWebVideoRotate.release.xcconfig; sourceTree = "<group>"; };
 		B131B96B95F723C5B9295E2DDFF8E73D /* Pods-XXTWebVideoRotate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XXTWebVideoRotate_Example.modulemap"; sourceTree = "<group>"; };
-		B2AFD2CEFE5AA1AB133BF77FE229D440 /* Pods_XXTWebVideoRotate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXTWebVideoRotate_Tests.framework; path = "Pods-XXTWebVideoRotate_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AFD2CEFE5AA1AB133BF77FE229D440 /* Pods_XXTWebVideoRotate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXTWebVideoRotate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE656E7A38B3300EF3230B7C0F8F8C2 /* Pods-XXTWebVideoRotate_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XXTWebVideoRotate_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C67206347E167AF4551FDC2E5FA832C8 /* Pods_XXTWebVideoRotate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XXTWebVideoRotate_Example.framework; path = "Pods-XXTWebVideoRotate_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67206347E167AF4551FDC2E5FA832C8 /* Pods_XXTWebVideoRotate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXTWebVideoRotate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D405527F9706B8D74F3AF0835678CB4E /* XXTWebVideoRotate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XXTWebVideoRotate-prefix.pch"; sourceTree = "<group>"; };
 		D75992D8718AB436339EB69E999213BF /* Pods-XXTWebVideoRotate_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XXTWebVideoRotate_Example-Info.plist"; sourceTree = "<group>"; };
-		E8E0020B6A0B0890DC30A447FC3493AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E8E0020B6A0B0890DC30A447FC3493AD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E9D524FF3E81D49BCDCCA6313901DB9A /* XXTWebVideoRotate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XXTWebVideoRotate-Info.plist"; sourceTree = "<group>"; };
 		F05B44EF24F1884F3E4990FB63797B94 /* Pods-XXTWebVideoRotate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XXTWebVideoRotate_Tests.modulemap"; sourceTree = "<group>"; };
-		F2058D5B5DBA1B73AAB502B573C10A5A /* XXTWebVideoRotate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XXTWebVideoRotate.framework; path = XXTWebVideoRotate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2058D5B5DBA1B73AAB502B573C10A5A /* XXTWebVideoRotate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XXTWebVideoRotate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -527,8 +527,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

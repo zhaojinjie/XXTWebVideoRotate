@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XXTWebVideoRotate'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '一个针对网页中的视频播放进行横屏操作的分类'
 
   s.description      = <<-DESC
@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
      自动旋转
                        DESC
 
-  s.homepage         = 'https://github.com/zhaoxuan/XXTWebVideoRotate'
+  s.homepage         = 'https://github.com/zhaojinjie/XXTWebVideoRotate'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhaoxuan' => 'zhaoxuan0315@163.com' }
-  s.source           = { :git => 'https://github.com/zhaoxuan/XXTWebVideoRotate.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhaojinjie/XXTWebVideoRotate.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'XXTWebVideoPlay/Classes/*.{h,m}'
+  s.source_files = 'XXTWebVideoRotate/Classes/*.{h,m}'
 
 end
