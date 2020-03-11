@@ -15,15 +15,15 @@
 // 监听网页上的视频播放
 -(void)observerWebViewVideoPlay{
    ///点击了视频播放按钮，会进入系统原生的播放器
-   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidBecomeVisibleNotification object:nil];
+   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidResignKeyNotification  object:self.view.window];
   //点击原生的系统播放器的左上角的关闭按钮的回调
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endPlayVideo:) name:UIWindowDidBecomeHiddenNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endPlayVideo:) name:UIWindowDidBecomeHiddenNotification object:self.view.window];
 }
 
 ///移除网页上的视频播放
 -(void)removeObserverWebViewVideoPlay{
     
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeVisibleNotification object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidResignKeyNotification object:nil];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeHiddenNotification object:nil];
     [self endPlayVideo:nil];
 }
@@ -34,19 +34,22 @@
 -(void)beginPlayVideo:(NSNotificationCenter *)noti{
     //如果是alertview或者actionsheet的话也会执行到这里，所以要判断一下
     if ([[UIApplication sharedApplication].keyWindow isMemberOfClass:[UIWindow class]]){
-         [self observerDeviceOrientationChange];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self toOrientation:UIInterfaceOrientationLandscapeRight];
-
+             if(!self.fullScreen && !self.clickCloseBtn){
+                [self observerDeviceOrientationChange];
+                [self toOrientation:UIInterfaceOrientationLandscapeRight];
+             }else{
+                self.clickCloseBtn=NO;
+             }
         });
     }
 }
 ///点击原生的系统播放器的左上角的关闭按钮的回调
 -(void)endPlayVideo:(NSNotificationCenter *)noti{
-    
     if(self.fullScreen){
         [self removeDeviceOrientationChange];
         [self toOrientation:UIInterfaceOrientationPortrait];
+        self.clickCloseBtn=YES;
     }
 }
 
@@ -80,6 +83,7 @@
             break;
         case UIInterfaceOrientationPortrait: {  //竖屏
             if (self.fullScreen) {
+                self.clickCloseBtn=YES;
                 [self toOrientation:UIInterfaceOrientationPortrait];
             }
         }
@@ -110,18 +114,18 @@
     // 判断如果当前方向和要旋转的方向一致,那么不做任何操作
     if (self.lastOrientation == orientation) { return; }
      UIWindow *keyWindow = application.keyWindow;
-    if(systemVersion()<13){
+    if(SystemVersion()<13){
         [application setStatusBarOrientation:orientation animated:NO];
     }
       if (orientation != UIInterfaceOrientationPortrait) {//横屏
-          if(systemVersion()>=13){
+          if(SystemVersion()>=13){
              [application setStatusBarHidden:YES];
           }
         
             keyWindow.bounds=CGRectMake(0, 0, ScreenHeight(), ScreenWidth());
             self.fullScreen=YES;
-      }else{
-          if(systemVersion()>=13){
+      }else{ //竖屏
+          if(SystemVersion()>=13){
               [application setStatusBarHidden:NO];
           }
           keyWindow.bounds=CGRectMake(0, 0, ScreenWidth(),ScreenHeight());
@@ -164,7 +168,7 @@ CGFloat ScreenHeight(){
     return [UIScreen mainScreen].bounds.size.height;
 }
 
-float systemVersion(){
+float SystemVersion(){
     return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
@@ -185,6 +189,15 @@ static void *XXTLastOrientation = &XXTLastOrientation;
 
 -(UIInterfaceOrientation)lastOrientation{
     return  [objc_getAssociatedObject(self, XXTLastOrientation)integerValue];
+}
+
+static void *XXTClickCloseBtn = &XXTClickCloseBtn;
+- (void)setClickCloseBtn:(BOOL)clickCloseBtn{
+    objc_setAssociatedObject(self, XXTClickCloseBtn, @(clickCloseBtn), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(BOOL)clickCloseBtn{
+    return  [objc_getAssociatedObject(self, XXTClickCloseBtn)boolValue];
 }
 
 
