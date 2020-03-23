@@ -1,5 +1,5 @@
 PODS:
-  - XXTWebVideoRotate (0.1.0)
+  - XXTWebVideoRotate (1.0.3)
 
 DEPENDENCIES:
   - XXTWebVideoRotate (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XXTWebVideoRotate: 03faa8b46786ac6380ad79ac9336ca59be6e102d
+  XXTWebVideoRotate: 4067270dddeb80868d8eac5de65f5721eb0df15c
 
 PODFILE CHECKSUM: 29473f24c4712a4cc99a572dfab1244630b7b4a9
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.8.3

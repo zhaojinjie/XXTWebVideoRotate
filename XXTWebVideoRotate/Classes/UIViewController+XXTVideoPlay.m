@@ -114,21 +114,13 @@
     // 判断如果当前方向和要旋转的方向一致,那么不做任何操作
     if (self.lastOrientation == orientation) { return; }
      UIWindow *keyWindow = application.keyWindow;
-    if(SystemVersion()<13){
-        [application setStatusBarOrientation:orientation animated:NO];
-    }
-      if (orientation != UIInterfaceOrientationPortrait) {//横屏
-          if(SystemVersion()>=13){
-             [application setStatusBarHidden:YES];
-          }
-        
-            keyWindow.bounds=CGRectMake(0, 0, ScreenHeight(), ScreenWidth());
-            self.fullScreen=YES;
-      }else{ //竖屏
-          if(SystemVersion()>=13){
-              [application setStatusBarHidden:NO];
-          }
-          keyWindow.bounds=CGRectMake(0, 0, ScreenWidth(),ScreenHeight());
+    if (orientation != UIInterfaceOrientationPortrait) {//横屏
+        [application setStatusBarHidden:YES];
+        application.keyWindow.bounds=CGRectMake(0, 0, ScreenHeight(), ScreenWidth());
+        self.fullScreen=YES;
+    }else{ //竖屏
+          [application setStatusBarHidden:NO];
+           application.keyWindow.window.bounds=CGRectMake(0, 0, ScreenWidth(),ScreenHeight());
           self.fullScreen=NO;
       }
       [UIView beginAnimations:nil context:nil];
@@ -168,10 +160,6 @@ CGFloat ScreenHeight(){
     return [UIScreen mainScreen].bounds.size.height;
 }
 
-float SystemVersion(){
-    return [[UIDevice currentDevice].systemVersion floatValue];
-}
-
 #pragma mark -getter & setter
 static void *XXTFullScreenKey = &XXTFullScreenKey;
 - (void)setFullScreen:(BOOL)fullScreen{
@@ -202,3 +190,4 @@ static void *XXTClickCloseBtn = &XXTClickCloseBtn;
 
 
 @end
+
