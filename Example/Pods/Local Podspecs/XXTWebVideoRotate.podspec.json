@@ -1,6 +1,6 @@
 {
   "name": "XXTWebVideoRotate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "summary": "一个针对网页中的视频播放进行横屏操作的分类",
   "description": "可以针对webView和wkwebView中视频播放，当点击播放按钮后可进行自动横屏，并且可以检测到屏幕旋转时进行\n   自动旋转",
   "homepage": "https://github.com/zhaojinjie/XXTWebVideoRotate",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zhaojinjie/XXTWebVideoRotate.git",
-    "tag": "1.0.3"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "8.0"

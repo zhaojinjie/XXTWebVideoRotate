@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)BOOL fullScreen;
 ///记录上一次屏幕旋转的方向
 @property(nonatomic,assign)UIInterfaceOrientation lastOrientation;
-///记录是否点击了关闭按钮
-@property(nonatomic,assign)BOOL clickCloseBtn;
 ///监听webview的视频播放
 -(void)observerWebViewVideoPlay;
 ///移除网页上的视频播放的监听
