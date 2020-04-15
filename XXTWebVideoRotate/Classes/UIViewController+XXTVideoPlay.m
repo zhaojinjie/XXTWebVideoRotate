@@ -23,8 +23,8 @@
 ///移除网页上的视频播放
 -(void)removeObserverWebViewVideoPlay{
     
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeVisibleNotification object:self.view.window];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeHiddenNotification object:self.view.window];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeVisibleNotification object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIWindowDidBecomeHiddenNotification object:nil];
     [self endPlayVideo:nil];
 }
 
