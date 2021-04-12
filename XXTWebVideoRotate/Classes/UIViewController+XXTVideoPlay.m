@@ -8,12 +8,31 @@
 
 #import "UIViewController+XXTVideoPlay.h"
 #import <objc/runtime.h>
+///查询video标签中的src属性的
+static NSString *const XXTQueryVideoTagString =@"document.querySelector('video').src";
 @implementation UIViewController (XXTVideoPlay)
- 
+
 #pragma mark - public
 
+///监听UIWebbview的视频播放
+-(void)observerWebViewVideoPlay:(UIWebView *)webView{
+   NSString *jsString=[webView stringByEvaluatingJavaScriptFromString:XXTQueryVideoTagString];
+    if(jsString.length>0){///说明存在video标签，进行播放的监听
+        [self observerVideoPlay];
+    }
+    
+}
+///监听WKWebview的视频播放
+-(void)observerWKWebViewVideoPlay:(WKWebView*)webView{
+    [webView evaluateJavaScript:XXTQueryVideoTagString completionHandler:^(NSString * _Nullable obj, NSError * _Nullable error) {
+        if(obj.length>0){///说明存在video标签，进行播放的监听
+            [self observerVideoPlay];
+        }
+    }];
+}
+
 // 监听网页上的视频播放
--(void)observerWebViewVideoPlay{
+-(void)observerVideoPlay{
    ///点击了视频播放按钮，会进入系统原生的播放器
    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidBecomeVisibleNotification  object:self.view.window];
   //点击原生的系统播放器的左上角的关闭按钮的回调
@@ -77,26 +96,22 @@
     if (orientation == UIDeviceOrientationFaceUp || orientation == UIDeviceOrientationFaceDown || orientation == UIDeviceOrientationUnknown ) { return; }
     switch (interfaceOrientation) {
         case UIInterfaceOrientationPortraitUpsideDown: {
-            
-        }
             break;
+        }
         case UIInterfaceOrientationPortrait: {  //竖屏
             if (self.fullScreen) {
-             
                 [self toOrientation:UIInterfaceOrientationPortrait];
             }
-        }
             break;
+        }
         case UIInterfaceOrientationLandscapeLeft: { //横屏向左
             [self toOrientation:UIInterfaceOrientationLandscapeLeft];
-            
-        }
             break;
+        }
         case UIInterfaceOrientationLandscapeRight: {//横屏向右
             [self toOrientation:UIInterfaceOrientationLandscapeRight];
-            
-        }
             break;
+        }
         default:
             break;
     }

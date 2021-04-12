@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <WebKit/WebKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (XXTVideoPlay)
@@ -15,8 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)BOOL fullScreen;
 ///记录上一次屏幕旋转的方向
 @property(nonatomic,assign)UIInterfaceOrientation lastOrientation;
-///监听webview的视频播放
--(void)observerWebViewVideoPlay;
+///监听UIWebbview的视频播放
+-(void)observerWebViewVideoPlay:(UIWebView *)webView;
+///监听WKWebview的视频播放
+-(void)observerWKWebViewVideoPlay:(WKWebView*)webView;
 ///移除网页上的视频播放的监听
 -(void)removeObserverWebViewVideoPlay;
 

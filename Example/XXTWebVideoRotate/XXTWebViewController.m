@@ -8,10 +8,9 @@
 //
 
 #import "XXTWebViewController.h"
-#import <UIViewController+XXTVideoPlay.h>
-@interface XXTWebViewController ()
+#import "UIViewController+XXTVideoPlay.h"
+@interface XXTWebViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *videoWebView;
-
 @end
 
 @implementation XXTWebViewController
@@ -20,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ///开始监听网页上的播放
-    [self observerWebViewVideoPlay];
     self.videoWebView.scalesPageToFit=YES;
+    self.videoWebView.delegate=self;
     self.videoWebView.backgroundColor=[UIColor whiteColor];
-    self.videoWebView.allowsInlineMediaPlayback = YES;
+    self.videoWebView.allowsInlineMediaPlayback = NO;
     self.videoWebView.mediaPlaybackRequiresUserAction=NO;
     [self loadWebView];
 }
@@ -36,10 +35,14 @@
 
 -(void)loadWebView{
     
-    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:    @"https://hezhibo.migucloud.com/play/dnTA6bo7Vgc"]];
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString: @"https://haokan.baidu.com/v?vid=13959996208383167676&pd=bjh&fr=bjhauthor&type=video"]];
     [self.videoWebView  loadRequest:request];
     
 }
 
+//MARK: -UIWebViewDelegate
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self observerWebViewVideoPlay:webView];
+}
 
 @end
