@@ -14,12 +14,12 @@ pod 'XXTWebVideoRotate'
 ### (1)在UIWebview或WKWebView的代理加载完成方法中添加:
  #### wkWebView:
  ///加载结束后调用<br>
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{<br> 
+-(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{<br> 
      [self observerWKWebViewVideoPlay:webView];<br> 
 }<br> 
 ####  UIWebView:
  ///加载结束后调用<br>
-- (void)webViewDidFinishLoad:(UIWebView *)webView{<br> 
+ -(void)webViewDidFinishLoad:(UIWebView *)webView{<br> 
     [self observerWebViewVideoPlay:webView];<br> 
 }<br> 
 ### (2)最好在viewDidDisappear移除监听，主要为了以防万一，不能进行监听的移除会导致很多的问题存在<br> 
