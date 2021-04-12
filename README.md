@@ -13,11 +13,12 @@ pod 'XXTWebVideoRotate'
 ## 使用
 ### (1)在UIWebview或WKWebView的代理加载完成方法中添加:
  #### wkWebView:
- ///加载结束后调用
- -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{<br> 
+ ///加载结束后调用<br>
+-(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{<br> 
      [self observerWKWebViewVideoPlay:webView];<br> 
 }<br> 
 ####  UIWebView:
+ ///加载结束后调用<br>
 - (void)webViewDidFinishLoad:(UIWebView *)webView{<br> 
     [self observerWebViewVideoPlay:webView];<br> 
 }<br> 
