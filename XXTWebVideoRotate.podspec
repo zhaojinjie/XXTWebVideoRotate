@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XXTWebVideoRotate'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = '一个针对网页中的视频播放进行横屏操作的分类'
 
   s.description      = <<-DESC
-  可以针对webView和wkwebView中视频播放，当点击播放按钮后可进行自动横屏，并且可以检测到屏幕旋转时进行
+  可以针对wkwebView中视频播放，当点击播放按钮后可进行自动横屏，并且可以检测到屏幕旋转时进行
      自动旋转
                        DESC
 

@@ -14,14 +14,6 @@ static NSString *const XXTQueryVideoTagString =@"document.querySelector('video')
 
 #pragma mark - public
 
-///监听UIWebbview的视频播放
--(void)observerWebViewVideoPlay:(UIWebView *)webView{
-   NSString *jsString=[webView stringByEvaluatingJavaScriptFromString:XXTQueryVideoTagString];
-    if(jsString.length>0){///说明存在video标签，进行播放的监听
-        [self observerVideoPlay];
-    }
-    
-}
 ///监听WKWebview的视频播放
 -(void)observerWKWebViewVideoPlay:(WKWebView*)webView{
     [webView evaluateJavaScript:XXTQueryVideoTagString completionHandler:^(NSString * _Nullable obj, NSError * _Nullable error) {
