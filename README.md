@@ -22,7 +22,7 @@ pod 'XXTWebVideoRotate'
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{<br> 
      [self observerWKWebViewVideoPlay:webView];<br> 
 }<br> 
-### (1)在viewDidDisappear移除监听
+### (2)在viewDidDisappear移除监听
 ///主要为了以防万一，不能进行监听的移除会导致很多的问题存在<br> 
 -(void)viewDidDisappear:(BOOL)animated{<br> 
     [super viewDidDisappear:animated];<br> 
