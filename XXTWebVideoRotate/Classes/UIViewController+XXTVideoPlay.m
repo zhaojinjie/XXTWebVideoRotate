@@ -26,9 +26,9 @@ static NSString *const XXTQueryVideoTagString =@"document.querySelector('video')
 // 监听网页上的视频播放
 -(void)observerVideoPlay{
    ///点击了视频播放按钮，会进入系统原生的播放器
-   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidBecomeVisibleNotification  object:self.view.window];
+   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(beginPlayVideo:) name:UIWindowDidBecomeVisibleNotification  object:nil];
   //点击原生的系统播放器的左上角的关闭按钮的回调
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endPlayVideo:) name:UIWindowDidBecomeHiddenNotification object:self.view.window];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endPlayVideo:) name:UIWindowDidBecomeHiddenNotification object:nil];
 }
 
 ///移除网页上的视频播放
@@ -184,7 +184,6 @@ static void *XXTLastOrientation = &XXTLastOrientation;
 -(UIInterfaceOrientation)lastOrientation{
     return  [objc_getAssociatedObject(self, XXTLastOrientation)integerValue];
 }
-
 
 @end
 

@@ -9,8 +9,8 @@
 
 #import "XXTWebViewController.h"
 #import "UIViewController+XXTVideoPlay.h"
-@interface XXTWebViewController ()<UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *videoWebView;
+@interface XXTWebViewController ()<WKNavigationDelegate,WKUIDelegate>
+@property(nonatomic,strong)WKWebView *videoWebView;
 @end
 
 @implementation XXTWebViewController
@@ -19,18 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ///开始监听网页上的播放
-    self.videoWebView.scalesPageToFit=YES;
-    self.videoWebView.delegate=self;
+    self.videoWebView =[[WKWebView alloc]initWithFrame:self.view.bounds];
+    self.videoWebView.navigationDelegate=self;
+    self.videoWebView.UIDelegate=self;
     self.videoWebView.backgroundColor=[UIColor whiteColor];
-    self.videoWebView.allowsInlineMediaPlayback = NO;
-    self.videoWebView.mediaPlaybackRequiresUserAction=NO;
+    [self.view addSubview:self.videoWebView];
     [self loadWebView];
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
      //移除网页上的监听
-    [self removeObserverWebViewVideoPlay ];
+    [self removeObserverWebViewVideoPlay];
 }
 
 -(void)loadWebView{
@@ -41,8 +41,8 @@
 }
 
 //MARK: -UIWebViewDelegate
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    [self observerWebViewVideoPlay:webView];
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [self observerWKWebViewVideoPlay:webView];
 }
 
 @end

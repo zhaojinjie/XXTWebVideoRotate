@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XXTWebVideoRotate'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = '一个针对网页中的视频播放进行横屏操作的分类'
 
   s.description      = <<-DESC
